@@ -1,0 +1,676 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Zoom G1Four - Effects Description, Genres and Uses</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="be118e1f-dbd6-41c1-80d0-6e265489c90e" class="page sans"><header><h1 class="page-title">Zoom G1Four - Effects Descriptions and Suggestions</h1><p class="page-description"></p></header><div class="page-body"><table id="e1b304ab-6d2a-4813-9998-7ef8c8291ddc" class="simple-table"><thead class="simple-table-header"><tr id="073c0b29-8817-4715-8c8c-1a429c25280c"><th id="^F~`" class="simple-table-header-color simple-table-header">Type</th><th id="MBI&gt;" class="simple-table-header-color simple-table-header">Effect Name</th><th id="Jy?b" class="simple-table-header-color simple-table-header">Referenced Equipment</th><th id="LsW_" class="simple-table-header-color simple-table-header">Description</th><th id="KJlg" class="simple-table-header-color simple-table-header">Main Genres</th><th id="H&lt;Di" class="simple-table-header-color simple-table-header">Main Artists</th><th id=":y]v" class="simple-table-header-color simple-table-header">Main Bands</th><th id="sFiE" class="simple-table-header-color simple-table-header">Use Suggestions</th></tr></thead><tbody><tr id="c996e8bb-8892-4f26-b838-51b4558ab9d9"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">MetalWRLD</td><td id="Jy?b" class="">BOSS Metal Zone MT-2</td><td id="LsW_" class="">Emulates the BOSS Metal Zone, known for its aggressive distortion.</td><td id="KJlg" class="">Metal, Hard Rock</td><td id="H&lt;Di" class="">Kirk Hammett</td><td id=":y]v" class="">Metallica</td><td id="sFiE" class="">1. Gain: 85, Bass: 60, Treble: 65, Level: 70 for intense metal rhythms.<br/>  2. Gain: 90, Bass: 55, Treble: 70, Level: 75 for shredding solos. 3. Gain:<br/>  80, Bass: 65, Treble: 60, Level: 80 for tight, percussive palm muting.<br/></td></tr><tr id="42630be1-e660-4c69-8fe4-a4325ad44db5"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">OctFuzz</td><td id="Jy?b" class="">Octave Fuzz (General Type)</td><td id="LsW_" class="">Adds an octave above the fuzz effect for a distinctive sound.</td><td id="KJlg" class="">Psychedelic, Rock</td><td id="H&lt;Di" class="">Jimi Hendrix</td><td id=":y]v" class="">The Jimi Hendrix Experience</td><td id="sFiE" class="">1. Boost: 70, Tone: 65, Level: 75 for a Hendrix-like solo. 2. Boost: 60,<br/>  Tone: 60, Level: 80 for a rhythm with an edge. 3. Boost: 75, Tone: 70, Level:<br/>  85 for leads that cut through the mix.<br/></td></tr><tr id="9785176e-2841-46b8-bc0e-2329fc75650c"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">NYC Muff</td><td id="Jy?b" class="">Electro-Harmonix Big Muff Pi</td><td id="LsW_" class="">Models the Electro-Harmonix Big Muff Pi, providing a creamy sustain.</td><td id="KJlg" class="">Rock, Psychedelic</td><td id="H&lt;Di" class="">David Gilmour</td><td id=":y]v" class="">Pink Floyd</td><td id="sFiE" class="">1. Sustain: 80, Tone: 60, Level: 70 for a Gilmour-like lead. 2. Sustain:<br/>  70, Tone: 65, Level: 75 for a full, rich rhythm. 3. Sustain: 85, Tone: 55,<br/>  Level: 80 for a solo with long, singing sustain.<br/></td></tr><tr id="bf9e565d-ca8b-45d2-a5d0-403cef2c9ca1"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">Aco.Sim</td><td id="Jy?b" class="">Acoustic Simulator (General Type)</td><td id="LsW_" class="">Transforms electric guitar signal to mimic an acoustic guitar.</td><td id="KJlg" class="">Country, Pop</td><td id="H&lt;Di" class="">John Mayer</td><td id=":y]v" class="">The Eagles</td><td id="sFiE" class="">1. Top: 60, Body: 55, Level: 80 for a bright acoustic rhythm. 2. Top: 50,<br/>  Body: 65, Level: 85 for a full-bodied acoustic lead. 3. Top: 55, Body: 60,<br/>  Level: 75 for fingerpicking with clarity and definition.<br/></td></tr><tr id="6b9af90c-b9e4-427e-b146-4c5a55e3792e"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">GoldDrive</td><td id="Jy?b" class="">Klon Centaur (Golden Overdrive)</td><td id="LsW_" class="">Emulates a boutique overdrive for a smooth, responsive drive.</td><td id="KJlg" class="">Blues, Rock</td><td id="H&lt;Di" class="">Joe Bonamassa</td><td id=":y]v" class="">Led Zeppelin</td><td id="sFiE" class="">1. Gain: 60, Bass: 60, Treble: 65, Level: 80 for a warm, bluesy drive. 2.<br/>  Gain: 70, Bass: 55, Treble: 70, Level: 85 for a crunch with character. 3.<br/>  Gain: 65, Bass: 65, Treble: 60, Level: 75 for a smooth, singing lead.<br/></td></tr><tr id="ce90d7de-1c97-49a5-97a8-b52eb39e4f18"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">TS Drive</td><td id="Jy?b" class="">Ibanez TS808 Tube Screamer</td><td id="LsW_" class="">Emulates the Ibanez TS808 Tube Screamer, known for its warm overdrive.</td><td id="KJlg" class="">Blues, Rock</td><td id="H&lt;Di" class="">Stevie Ray Vaughan</td><td id=":y]v" class="">The Rolling Stones</td><td id="sFiE" class="">1. Gain: 50, Tone: 60, Level: 75 for a bluesy lead. 2. Gain: 40, Tone:<br/>  70, Level: 80 for a rhythm with bite. 3. Gain: 60, Tone: 65, Level: 85 for a<br/>  screaming lead.<br/></td></tr><tr id="bdf18448-c7d4-4dd0-a22a-198842f4bb98"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">GoldDrive</td><td id="Jy?b" class="">Klon Centaur (Golden Overdrive)</td><td id="LsW_" class="">Emulates a famous gold overdrive pedal for boutique crunch.</td><td id="KJlg" class="">Rock, Blues</td><td id="H&lt;Di" class="">Joe Bonamassa</td><td id=":y]v" class="">Led Zeppelin</td><td id="sFiE" class="">1. Gain: 55, Bass: 60, Treble: 65, Level: 75 for a creamy blues drive. 2.<br/>  Gain: 65, Bass: 55, Treble: 70, Level: 80 for a classic rock crunch. 3. Gain:<br/>  70, Bass: 60, Treble: 65, Level: 85 for lead tones with sustain.<br/></td></tr><tr id="54498433-b195-4304-b4ef-25929b7d04fa"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">Aco.Sim</td><td id="Jy?b" class="">Acoustic Simulator</td><td id="LsW_" class="">Transforms electric guitar signal to mimic an acoustic guitar.</td><td id="KJlg" class="">Country, Pop</td><td id="H&lt;Di" class="">John Mayer</td><td id=":y]v" class="">The Eagles</td><td id="sFiE" class="">1. Top: 50, Body: 60, Level: 75 for a convincing acoustic rhythm. 2. Top:<br/>  60, Body: 70, Level: 80 for a bright acoustic lead. 3. Top: 55, Body: 65,<br/>  Level: 85 for a full-bodied strumming sound.<br/></td></tr><tr id="68b82d2f-415f-460f-bf60-4cee15c38fe1"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">EP Stomp</td><td id="Jy?b" class="">Maestro Echoplex Preamp</td><td id="LsW_" class="">Models the Maestro Echoplex preamp, known for its sweet, musical echo.</td><td id="KJlg" class="">Rock, Blues</td><td id="H&lt;Di" class="">Jimmy Page</td><td id=":y]v" class="">Led Zeppelin</td><td id="sFiE" class="">1. Gain: 50 for warmth in leads. 2. Gain: 30 for subtle enhancement in<br/>  cleans. 3. Gain: 70 with echo for solos with depth.<br/></td></tr><tr id="326e8d4d-8286-44a3-9ebe-1607d110707d"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">RC Boost</td><td id="Jy?b" class="">Xotic RC Booster</td><td id="LsW_" class="">Booster that adds richness and clarity, inspired by the Xotic RC Booster.</td><td id="KJlg" class="">Versatile/All</td><td id="H&lt;Di" class="">Scott Henderson</td><td id=":y]v" class="">Toto</td><td id="sFiE" class="">1. Gain: Low for clean signal boost. 2. Gain: Medium for pushing amp into<br/>  natural overdrive. 3. Gain: High for solos to cut through the mix.<br/></td></tr><tr id="56391020-8fe0-4026-a618-ffcfa7699f98"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">SweetDrv</td><td id="Jy?b" class="">Overdrive (General Type)</td><td id="LsW_" class="">Emulates a sweet-sounding overdrive for smooth, singing leads.</td><td id="KJlg" class="">Blues, Rock</td><td id="H&lt;Di" class="">Eric Clapton</td><td id=":y]v" class="">Cream</td><td id="sFiE" class="">1. Gain: 60 for creamy leads. 2. Gain: 40 for bluesy rhythm. 3. Gain: 80<br/>  for a powerful rock tone.<br/></td></tr><tr id="2b8bf08b-09a8-40f4-a7fe-a3299fe86844"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">DYN Drive</td><td id="Jy?b" class="">Dynamic Overdrive (General Type)</td><td id="LsW_" class="">Dynamic drive that adjusts to your playing intensity.</td><td id="KJlg" class="">Rock, Blues</td><td id="H&lt;Di" class="">Gary Moore</td><td id=":y]v" class="">Thin Lizzy</td><td id="sFiE" class="">1. Gain: 50 for dynamic response to picking. 2. Gain: 70 for aggressive<br/>  rock tones. 3. Gain: 30 for blues leads that clean up with lighter playing.<br/></td></tr><tr id="7a2155be-e6ba-41c9-a129-738ad97651a5"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">RedCrunch</td><td id="Jy?b" class="">Brown Sound Amplifiers</td><td id="LsW_" class="">Captures the &quot;brown sound&quot; of classic rock amps.</td><td id="KJlg" class="">Classic Rock</td><td id="H&lt;Di" class="">Eddie Van Halen</td><td id=":y]v" class="">Van Halen</td><td id="sFiE" class="">1. Gain: High, Tone: Mid, Presence: High for classic rock lead. 2. Gain:<br/>  Mid, Tone: High, Presence: Mid for crunchy rhythm. 3. Gain: Low, Tone: Mid,<br/>  Presence: High for a clean sound with an edge.<br/></td></tr><tr id="aed96d61-f17d-48cd-9210-eb6512b919da"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">TB MK1.5</td><td id="Jy?b" class="">Fuzz Pedal (General Type)</td><td id="LsW_" class="">Classic fuzz effect with a rich, creamy texture.</td><td id="KJlg" class="">Psychedelic Rock</td><td id="H&lt;Di" class="">David Gilmour</td><td id=":y]v" class="">Pink Floyd</td><td id="sFiE" class="">1. Attack: High for a thick, sustaining lead. 2. Attack: Low for a<br/>  vintage fuzz rhythm. 3. Attack: Medium for a balanced fuzz tone.<br/></td></tr><tr id="d27eb960-ed3d-479e-855f-1364e99b5221"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">SpotBoost</td><td id="Jy?b" class="">Booster (General Type)</td><td id="LsW_" class="">A flexible booster for enhancing specific frequencies.</td><td id="KJlg" class="">Versatile/All</td><td id="H&lt;Di" class="">Mark Knopfler</td><td id=":y]v" class="">Dire Straits</td><td id="sFiE" class="">1. Boost: Low for subtle volume increase. 2. Boost: High for lead<br/>  emphasis. 3. Bass: Cut, Treble: Boost for mid-scoop.<br/></td></tr><tr id="eaeff7ad-d03d-4e3f-9665-badbfb1cf524"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">HG THRTTL</td><td id="Jy?b" class="">Mesa Boogie THROTTLE BOX</td><td id="LsW_" class="">Models the sound of the Mesa Boogie THROTTLE BOX for high-gain tones.</td><td id="KJlg" class="">Metal, Hard Rock</td><td id="H&lt;Di" class="">John Petrucci</td><td id=":y]v" class="">Dream Theater</td><td id="sFiE" class="">1. Gain: Max, Tone: Mid, MidCut: High for modern metal rhythm. 2. Gain:<br/>  High, Tone: Low, MidCut: Low for a warm, high-gain lead. 3. Gain: Mid, Tone:<br/>  High, MidCut: Mid for a crunchy sound.<br/></td></tr><tr id="c4f4ea34-8b0b-43e3-9fcb-ffbe9c902b79"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">BG GRID</td><td id="Jy?b" class="">Mesa Boogie GRID SLAMMER</td><td id="LsW_" class="">Models the Mesa Boogie GRID SLAMMER for tight overdrive.</td><td id="KJlg" class="">Rock, Metal</td><td id="H&lt;Di" class="">Carlos Santana</td><td id=":y]v" class="">Santana</td><td id="sFiE" class="">1. Gain: High, Tone: High for leads with clarity. 2. Gain: Low, Tone: Mid<br/>  for warm rhythm. 3. Gain: Mid, Tone: Low for smooth blues overdrive.<br/></td></tr><tr id="be4f0ad5-b4d8-4a73-8df9-57af39441f38"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">DIST 1</td><td id="Jy?b" class="">BOSS DS-1 Distortion</td><td id="LsW_" class="">Emulates the BOSS DS-1 Distortion, a classic pedal for rock distortion.</td><td id="KJlg" class="">Rock, Punk</td><td id="H&lt;Di" class="">Kurt Cobain</td><td id=":y]v" class="">Nirvana</td><td id="sFiE" class="">1. Gain: 75 for aggressive distortion. 2. Gain: 50, Tone: 50 for a<br/>  balanced rock tone. 3. Gain: 85, Tone: 75 for a bright, cutting lead.<br/></td></tr><tr id="76fd3dbb-e5d7-4802-9eff-1d2d0847af7b"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">Squeak</td><td id="Jy?b" class="">ProCo RAT</td><td id="LsW_" class="">Models the ProCo RAT, a versatile distortion pedal.</td><td id="KJlg" class="">Rock, Alternative</td><td id="H&lt;Di" class="">Thom Yorke</td><td id=":y]v" class="">Radiohead</td><td id="sFiE" class="">1. Gain: 80, Filter: Mid for a gritty rhythm. 2. Gain: 60, Filter: Low<br/>  for a darker lead tone. 3. Gain: 70, Filter: High for a bright distortion.<br/></td></tr><tr id="911e27aa-3f71-47bb-917b-a1277cbeb5de"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">UpOctBSTR</td><td id="Jy?b" class="">Octave Booster (General Type)</td><td id="LsW_" class="">Adds an upper octave for a full-spectrum distortion.</td><td id="KJlg" class="">Experimental</td><td id="H&lt;Di" class="">Jack White</td><td id=":y]v" class="">The White Stripes</td><td id="sFiE" class="">1. Boost: Mid, Octave: High for octave leads. 2. Boost: High, Octave: Low<br/>  for a thick rhythm. 3. Boost: Low, Octave: Mid for an experimental effect.<br/></td></tr><tr id="22517dc6-07c4-49be-bead-d3ec78957317"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">OutputBST</td><td id="Jy?b" class="">Output Booster (General Type)</td><td id="LsW_" class="">Boosts the output level for increased signal strength.</td><td id="KJlg" class="">Versatile/All</td><td id="H&lt;Di" class="">-</td><td id=":y]v" class="">-</td><td id="sFiE" class="">1. Boost: Low for clean volume increase. 2. Boost: Mid for driving the<br/>  amp harder. 3. Boost: High for a solo boost.<br/></td></tr><tr id="9341172e-3320-45eb-9d27-c2dba46651ba"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">DIST Plus</td><td id="Jy?b" class="">MXR DISTORTION+</td><td id="LsW_" class="">Emulates the MXR DISTORTION+ for a classic distortion sound.</td><td id="KJlg" class="">Classic Rock</td><td id="H&lt;Di" class="">Randy Rhoads</td><td id=":y]v" class="">Ozzy Osbourne</td><td id="sFiE" class="">1. Gain: 70, Tone: 60 for a classic rock distortion. 2. Gain: 50, Tone:<br/>  70 for a rhythm with a bite. 3. Gain: 85, Tone: 65 for a solo with presence.<br/></td></tr><tr id="c532e5c5-f55b-4b23-a685-9225226ded76"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">Zen O.DRV</td><td id="Jy?b" class="">Hermida Audio Zendrive</td><td id="LsW_" class="">Models the Hermida Audio Zendrive for smooth overdrive.</td><td id="KJlg" class="">Blues, Jazz</td><td id="H&lt;Di" class="">Robben Ford</td><td id=":y]v" class="">John Mayer Trio</td><td id="sFiE" class="">1. Gain: 60, Tone: 50, Voice: 75 for a bluesy overdrive. 2. Gain: 40,<br/>  Tone: 60, Voice: 85 for a touch-sensitive drive. 3. Gain: 80, Tone: 55,<br/>  Voice: 65 for a jazz lead with bite.<br/></td></tr><tr id="fa085ccc-07e0-4de7-9635-f3323ead507a"><td id="^F~`" class="">Drive</td><td id="MBI&gt;" class="">VioletDST</td><td id="Jy?b" class="">SUHR Riot Reloaded</td><td id="LsW_" class="">Models the SUHR Riot Reloaded for high-gain distortion.</td><td id="KJlg" class="">Rock, Metal</td><td id="H&lt;Di" class="">Guthrie Govan</td><td id=":y]v" class="">The Aristocrats</td><td id="sFiE" class="">1. Gain: 80, Tone: 65 for a modern rock distortion. 2. Gain: 60, Tone: 70<br/>  for a lead tone with a smooth top end. 3. Gain: 90, Tone: 60 for a heavy,<br/>  aggressive rhythm tone.<br/></td></tr><tr id="d1a78240-84d1-4fc7-af50-b3d45f2d895f"><td id="^F~`" class="">Dynamics</td><td id="MBI&gt;" class="">Comp</td><td id="Jy?b" class="">MXR Dyna Comp</td><td id="LsW_" class="">Mimics the MXR Dyna Comp for a classic compression, enhancing sustain.</td><td id="KJlg" class="">Rock, Blues</td><td id="H&lt;Di" class="">John Mayer</td><td id=":y]v" class="">The Beatles</td><td id="sFiE" class="">1. Sensitivity: 5, Volume: 75 for smooth leads. 2. Sensitivity: 7,<br/>  Volume: 85 for punchy rhythms. 3. Sensitivity: 3, Volume: 65 for subtle<br/>  compression on clean tones.<br/></td></tr><tr id="14302eb0-644d-4131-ad61-63983a0f3b13"><td id="^F~`" class="">Dynamics</td><td id="MBI&gt;" class="">RackComp</td><td id="Jy?b" class="">Studio Rack Compressor</td><td id="LsW_" class="">Provides detailed compression settings for studio-quality dynamics<br/>  control.<br/></td><td id="KJlg" class="">All</td><td id="H&lt;Di" class="">Steve Lukather</td><td id=":y]v" class="">Toto</td><td id="sFiE" class="">1. Threshold: 15, Ratio: 4, Attack: 5 for balanced dynamics. 2.<br/>  Threshold: 10, Ratio: 6, Attack: 7 for aggressive compression. 3. Threshold:<br/>  20, Ratio: 3, Attack: 4 for light compression.<br/></td></tr><tr id="0e241e2b-8772-4811-9c4b-9c7b85ab2876"><td id="^F~`" class="">Dynamics</td><td id="MBI&gt;" class="">SlowATTCK</td><td id="Jy?b" class="">Slow Attack Effect Pedal</td><td id="LsW_" class="">Creates a violin-like swell effect, slowing the attack of each note.</td><td id="KJlg" class="">Ambient, Cinematic</td><td id="H&lt;Di" class="">Jeff Beck</td><td id=":y]v" class="">Explosions in the Sky</td><td id="sFiE" class="">1. Time: 25, Curve: 5 for a slow swell effect. 2. Time: 10, Curve: 7 for<br/>  a faster attack. 3. Time: 35, Curve: 3 for ambient textures.<br/></td></tr><tr id="2c6be4df-d1d6-49fc-bf8c-508ccbb58e54"><td id="^F~`" class="">Dynamics</td><td id="MBI&gt;" class="">ZNR</td><td id="Jy?b" class="">Zoom Noise Reduction (ZNR)</td><td id="LsW_" class="">ZOOM&#x27;s unique noise reduction, cutting noise during pauses without tone<br/>  loss.<br/></td><td id="KJlg" class="">Any</td><td id="H&lt;Di" class="">-</td><td id=":y]v" class="">-</td><td id="sFiE" class="">1. Depth: 50 for noise-free high-gain settings. 2. Depth: 70 for<br/>  maintaining sustain. 3. Depth: 30 for clean setups.<br/></td></tr><tr id="3728d33e-5e1d-46f4-a92a-6b59d713fb53"><td id="^F~`" class="">Dynamics</td><td id="MBI&gt;" class="">MuteSW</td><td id="Jy?b" class="">Mute Switch Pedal</td><td id="LsW_" class="">Allows muting the signal with a footswitch, ideal for silent tuning or<br/>  effect changes.<br/></td><td id="KJlg" class="">Any</td><td id="H&lt;Di" class="">-</td><td id=":y]v" class="">-</td><td id="sFiE" class="">1. Edge: 10 for sharp muting. 2. Edge: 0 for smooth transitions. 3.<br/>  Speed: 50 for quick muting.<br/></td></tr><tr id="7fd2aa04-b098-4a1d-860e-fa136b3e06b8"><td id="^F~`" class="">Dynamics</td><td id="MBI&gt;" class="">GrayComp</td><td id="Jy?b" class="">ROSS Compressor</td><td id="LsW_" class="">Models a ROSS Compressor, known for its smooth compression.</td><td id="KJlg" class="">Country, Funk</td><td id="H&lt;Di" class="">Brad Paisley</td><td id=":y]v" class="">Parliament-Funkadelic</td><td id="sFiE" class="">1. Sustain: 60, Volume: 80 for country picking. 2. Sustain: 70, Volume:<br/>  75 for a funky rhythm. 3. Sustain: 50, Volume: 85 for a natural, even tone.<br/></td></tr><tr id="28be143f-7fe1-4c77-910b-83e086ebb8e7"><td id="^F~`" class="">Dynamics</td><td id="MBI&gt;" class="">NoiseGate</td><td id="Jy?b" class="">Noise Gate Pedal</td><td id="LsW_" class="">Eliminates hum and noise from the signal chain, with adjustable<br/>  threshold.<br/></td><td id="KJlg" class="">Metal, Hard Rock</td><td id="H&lt;Di" class="">James Hetfield</td><td id=":y]v" class="">Metallica</td><td id="sFiE" class="">1. Threshold: 50, Decay: 5 for tight metal riffs. 2. Threshold: 30,<br/>  Decay: 7 for clean tones. 3. Threshold: 40, Decay: 6 for rhythm guitar.<br/></td></tr><tr id="0f40c2e5-91bd-4548-a6e0-c5b0851c186d"><td id="^F~`" class="">Dynamics</td><td id="MBI&gt;" class="">OptComp</td><td id="Jy?b" class="">Optical Compressor</td><td id="LsW_" class="">An optical compressor for smooth and transparent dynamics control.</td><td id="KJlg" class="">Blues, Jazz</td><td id="H&lt;Di" class="">Robben Ford</td><td id=":y]v" class="">John Mayer Trio</td><td id="sFiE" class="">1. Drive: 5, Volume: 80 for smooth jazz tones. 2. Drive: 7, Volume: 85<br/>  for blues solos. 3. Drive: 3, Volume: 75 for light compression on clean<br/>  rhythms.<br/></td></tr><tr id="2d95575e-c43e-4b0f-ae87-d477affee084"><td id="^F~`" class="">Dynamics</td><td id="MBI&gt;" class="">BlackOpt</td><td id="Jy?b" class="">Demeter Compulator</td><td id="LsW_" class="">Simulates a Demeter Compulator, offering a warm and musical compression.</td><td id="KJlg" class="">Pop, Rock</td><td id="H&lt;Di" class="">Paul McCartney</td><td id=":y]v" class="">The Beatles</td><td id="sFiE" class="">1. Comp: 6, Volume: 80 for pop guitar. 2. Comp: 8, Volume: 75 for driving<br/>  rock rhythm. 3. Comp: 4, Volume: 85 for a subtle effect on bass guitar.<br/></td></tr><tr id="6b41e81f-8bc1-48ad-b6d1-ae284949eded"><td id="^F~`" class="">Dynamics</td><td id="MBI&gt;" class="">LMT-76</td><td id="Jy?b" class="">UREI 1176LN Compressor/Limiter</td><td id="LsW_" class="">Emulates the UREI 1176LN, a classic studio compressor/limiter.</td><td id="KJlg" class="">All</td><td id="H&lt;Di" class="">Chris Lord-Alge</td><td id=":y]v" class="">Green Day</td><td id="sFiE" class="">1. Input: 50, Ratio: 4 for general compression. 2. Input: 70, Ratio: 8<br/>  for limiting peaks. 3. Input: 60, Ratio: 12 for aggressive compression on<br/>  drums.<br/></td></tr><tr id="fbf46cfb-8502-4e31-9e20-aa6828482ee7"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">AutoWah</td><td id="Jy?b" class="">Wah Pedal (Vox, Cry Baby)</td><td id="LsW_" class="">A dynamic wah effect that responds to picking intensity.</td><td id="KJlg" class="">Funk, Soul</td><td id="H&lt;Di" class="">Bootsy Collins</td><td id=":y]v" class="">Parliament-Funkadelic</td><td id="sFiE" class="">1. Sensitivity: High, RESO: Medium for classic funk wah. 2. Sensitivity:<br/>  Low, RESO: High for subtle wah on chords. 3. Sensitivity: Medium, RESO: Low<br/>  for expressive solos.<br/></td></tr><tr id="7a3d75cc-524d-4b4b-918b-2e87a0b53b2e"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">Resonance</td><td id="Jy?b" class="">Resonant Filter Pedal</td><td id="LsW_" class="">Adds a resonant peak to the filter frequency, creating a pronounced wah<br/>  effect.<br/></td><td id="KJlg" class="">Funk, Electronic</td><td id="H&lt;Di" class="">Zapp &amp; Roger</td><td id=":y]v" class="">Daft Punk</td><td id="sFiE" class="">1. Sensitivity: 7, RESO: 8 for pronounced filter sweeps. 2. Sensitivity:<br/>  5, RESO: 6 for a milder effect during rhythm playing. 3. Sensitivity: 9,<br/>  RESO: 9 for a sharp, synth-like effect.<br/></td></tr><tr id="dbe8b7ba-be90-42e3-b67b-c053bd4654b8"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">Cry</td><td id="Jy?b" class="">Cry Baby Wah Pedal</td><td id="LsW_" class="">Emulates the sound of a wah pedal for a sharp, vocal-like tone.</td><td id="KJlg" class="">Rock, Blues</td><td id="H&lt;Di" class="">Jimi Hendrix</td><td id=":y]v" class="">The Jimi Hendrix Experience</td><td id="sFiE" class="">1. Range: High, RESO: Medium for classic wah leads. 2. Range: Low, RESO:<br/>  High for a growling rhythm wah. 3. Range: Medium, RESO: Low for a subtle<br/>  background wah.<br/></td></tr><tr id="c4706750-6b25-4463-b763-7fad7ad8423a"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">SeqFLTR</td><td id="Jy?b" class="">Sequential Filter Pedal</td><td id="LsW_" class="">A sequential filter effect that cycles through different filter settings.</td><td id="KJlg" class="">Experimental</td><td id="H&lt;Di" class="">Tom Morello</td><td id=":y]v" class="">Rage Against The Machine</td><td id="sFiE" class="">1. Step: 6, Pattern: 4, Speed: 7 for a rhythmic pattern. 2. Step: 8,<br/>  Pattern: 2, Speed: 5 for a complex sequence. 3. Step: 4, Pattern: 1, Speed: 6<br/>  for a simpler, melodic pattern.<br/></td></tr><tr id="53fd84dc-3fea-41e2-8517-8231ae1708a1"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">Gt GEQ</td><td id="Jy?b" class="">Graphic Equalizer Pedal</td><td id="LsW_" class="">A 6-band graphic EQ tailored for guitar frequencies.</td><td id="KJlg" class="">Versatile/All</td><td id="H&lt;Di" class="">Eric Clapton</td><td id=":y]v" class="">The Beatles</td><td id="sFiE" class="">1. 800Hz: +5, 3.2kHz: +5 for midrange presence. 2. 160Hz: +3, 6.4kHz: +3<br/>  for overall balance. 3. 400Hz: -4 for mid-scoop.<br/></td></tr><tr id="e3464b46-a33e-4b49-a463-af6c545cfd8b"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">Gt GEQ7</td><td id="Jy?b" class="">7-Band Graphic Equalizer Pedal</td><td id="LsW_" class="">Similar to Gt GEQ but with an additional frequency band for more control.</td><td id="KJlg" class="">Versatile/All</td><td id="H&lt;Di" class="">David Gilmour</td><td id=":y]v" class="">Pink Floyd</td><td id="sFiE" class="">1. 1.6kHz: +6 for lead clarity. 2. 100Hz: -5, 200Hz: -5 for bass cut. 3.<br/>  3.2kHz: +4, 6.4kHz: +4 for brightening up the high end.<br/></td></tr><tr id="31401673-a596-4935-b1e3-71beb091cee8"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">St Gt GEQ</td><td id="Jy?b" class="">Stereo Graphic Equalizer Pedal</td><td id="LsW_" class="">A stereo 6-band EQ providing a wider sound stage.</td><td id="KJlg" class="">Ambient, Stereo Mixes</td><td id="H&lt;Di" class="">The Edge</td><td id=":y]v" class="">U2</td><td id="sFiE" class="">1. 160Hz: +3, 12kHz: +3 for a stereo spread effect. 2. 400Hz: -5, 800Hz:<br/>  -5 for a clear stereo image. 3. 3.2kHz: +5 in stereo for immersive lead<br/>  tones.<br/></td></tr><tr id="bd013e4d-467c-4e08-8e48-048f36da7e17"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">ParaEQ</td><td id="Jy?b" class="">Parametric Equalizer Pedal</td><td id="LsW_" class="">A parametric EQ allowing for precise frequency adjustments.</td><td id="KJlg" class="">Studio Recording, Live Performance</td><td id="H&lt;Di" class="">John Mayer</td><td id=":y]v" class="">Continuum (Album Recording)</td><td id="sFiE" class="">1. FREQ: 1.5kHz, Gain: +4 for vocal frequency enhancement. 2. FREQ:<br/>  800Hz, Gain: -3 for removing mud. 3. FREQ: 2.5kHz, Gain: +5 for presence in<br/>  solos.<br/></td></tr><tr id="96f3295e-f111-4102-aefd-d9f667fc29e0"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">RndmFLTR</td><td id="Jy?b" class="">Random Filter Pedal</td><td id="LsW_" class="">A filter that changes its character randomly, adding an unpredictable<br/>  element to the sound.<br/></td><td id="KJlg" class="">Electronic, Psychedelic</td><td id="H&lt;Di" class="">Aphex Twin</td><td id=":y]v" class="">Boards of Canada</td><td id="sFiE" class="">1. Type: HPF, Speed: Slow for ethereal effects. 2. Type: LPF, Speed: Fast<br/>  for aggressive, random modulation. 3. Type: HPF, Speed: Medium, BAL: High for<br/>  a sweeping effect.<br/></td></tr><tr id="c7448379-b1dc-4efd-b473-0c67ff939026"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">LowPassFL</td><td id="Jy?b" class="">Low Pass Filter Pedal</td><td id="LsW_" class="">A low-pass filter effect that changes the cutoff frequency based on<br/>  playing dynamics.<br/></td><td id="KJlg" class="">Funk, Reggae</td><td id="H&lt;Di" class="">Bootsy Collins</td><td id=":y]v" class="">Parliament-Funkadelic</td><td id="sFiE" class="">1. FREQ: Low, Sense: High for deep bass lines. 2. FREQ: High, Sense: Low<br/>  for subtle low-end roll-off. 3. FREQ: Medium, Sense: Medium, RESO: High for a<br/>  pronounced filter effect on guitar.<br/></td></tr><tr id="74ec3b31-234c-453e-915c-9c56935e0e39"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">Exciter</td><td id="Jy?b" class="">Exciter / Enhancer Pedal</td><td id="LsW_" class="">Enhances the harmonic content of the signal for increased presence and<br/>  clarity.<br/></td><td id="KJlg" class="">Acoustic, Studio Mixes</td><td id="H&lt;Di" class="">Paul Simon</td><td id=":y]v" class="">Simon &amp; Garfunkel</td><td id="sFiE" class="">1. Bass: Low, Treble: High for acoustic guitar enhancement. 2. Bass:<br/>  Medium, Treble: Medium for adding air to vocals. 3. Bass: High, Treble: Low<br/>  for adding warmth to piano.<br/></td></tr><tr id="d4e6df64-791a-4f04-8ba1-c341a21ab261"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">Step</td><td id="Jy?b" class="">Step Filter Pedal</td><td id="LsW_" class="">A special effect that quantizes the sound in steps for a unique rhythmic<br/>  effect.<br/></td><td id="KJlg" class="">Dance, Electronic</td><td id="H&lt;Di" class="">Deadmau5</td><td id=":y]v" class="">Daft Punk</td><td id="sFiE" class="">1. Depth: High, Rate: Medium for a strong stepping effect. 2. Depth: Low,<br/>  Rate: High for a subtle background rhythm. 3. Depth: Medium, Rate: Low,<br/>  Shape: Square for a choppy effect.<br/></td></tr><tr id="cbd8e710-d79d-4d5a-8069-86d9343ba98a"><td id="^F~`" class="">Filter</td><td id="MBI&gt;" class="">LFO FLTR</td><td id="Jy?b" class="">LFO Controlled Filter Pedal</td><td id="LsW_" class="">A cyclic filter effect controlled by an LFO, offering a range of<br/>  waveforms.<br/></td><td id="KJlg" class="">Ambient, Experimental</td><td id="H&lt;Di" class="">Brian Eno</td><td id=":y]v" class="">Boards of Canada</td><td id="sFiE" class="">1. Depth: High, Rate: Slow, Wave: Sine for a smooth, evolving filter<br/>  sweep. 2. Depth: Medium, Rate: Medium, Wave: Triangle for a more rhythmic<br/>  effect. 3. Depth: Low, Rate: Fast, Wave: Sawtooth for a sharp, percussive<br/>  effect.<br/></td></tr><tr id="7fd1061b-b59d-4294-b505-b6befc39e0f7"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">MS 800</td><td id="Jy?b" class="">Marshall JCM800</td><td id="LsW_" class="">Emulates the Marshall JCM800, known for its high gain and punchy mids.</td><td id="KJlg" class="">Hard Rock, Metal</td><td id="H&lt;Di" class="">Zakk Wylde</td><td id=":y]v" class="">AC/DC</td><td id="sFiE" class="">1. Gain: 80, Bass: 60, Mid: 70 for a classic rock tone. 2. Gain: 90,<br/>  Bass: 50, Mid: 80, Treble: 60 for a metal rhythm. 3. Gain: 70, Bass: 55, Mid:<br/>  60, Treble: 75 for a lead tone with clarity.<br/></td></tr><tr id="380538f0-743b-42f3-b3ef-30393da7926e"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">MS 1959</td><td id="Jy?b" class="">Marshall 1959 Super Lead</td><td id="LsW_" class="">Models the Marshall 1959 Super Lead for a vintage rock sound.</td><td id="KJlg" class="">Classic Rock</td><td id="H&lt;Di" class="">Jimmy Page</td><td id=":y]v" class="">Led Zeppelin</td><td id="sFiE" class="">1. Gain: 60, Bass: 70, Mid: 65 for a punchy rhythm. 2. Gain: 75, Bass:<br/>  60, Mid: 70, Treble: 65 for a bluesy lead. 3. Gain: 50, Bass: 65, Mid: 60,<br/>  Treble: 70 for a clean tone with bite.<br/></td></tr><tr id="d82a932f-879c-4f8d-ab44-d45a86ad7c41"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">MS 45os</td><td id="Jy?b" class="">Marshall JTM45</td><td id="LsW_" class="">Reproduces the tone of the Marshall JTM45 for warm, rich blues sounds.</td><td id="KJlg" class="">Blues, Rock</td><td id="H&lt;Di" class="">Eric Clapton</td><td id=":y]v" class="">The Rolling Stones</td><td id="sFiE" class="">1. Gain: 50, Bass: 65, Mid: 60 for a blues rhythm. 2. Gain: 70, Bass: 55,<br/>  Mid: 65, Treble: 60 for classic rock leads. 3. Gain: 60, Bass: 60, Mid: 70,<br/>  Treble: 65 for a creamy distortion.<br/></td></tr><tr id="e197bd3b-78a8-41ee-9206-8ddabfcda419"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">FDTWNR</td><td id="Jy?b" class="">Fender &#x27;65 Twin Reverb</td><td id="LsW_" class="">Captures the clean, bright tone of the Fender &#x27;65 Twin Reverb.</td><td id="KJlg" class="">Jazz, Country</td><td id="H&lt;Di" class="">Eric Johnson</td><td id=":y]v" class="">The Eagles</td><td id="sFiE" class="">1. Gain: Low, Bass: 50, Mid: 55, Treble: 60 for a clean jazz tone. 2.<br/>  Gain: Medium, Bass: 60, Mid: 50, Treble: 70 for a country twang. 3. Gain:<br/>  Low, Bass: 55, Mid: 60, Treble: 65 for a clean blues tone.<br/></td></tr><tr id="f798d9a9-c5ec-4753-b13b-3d215dc1f6b1"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">FD B-MAN</td><td id="Jy?b" class="">Fender &#x27;59 Bassman</td><td id="LsW_" class="">Emulates the Fender &#x27;59 Bassman with its fat, warm tones.</td><td id="KJlg" class="">Blues, Rockabilly</td><td id="H&lt;Di" class="">Buddy Guy</td><td id=":y]v" class="">Stray Cats</td><td id="sFiE" class="">1. Gain: Low, Bass: 70, Mid: 60 for a warm rhythm. 2. Gain: Medium, Bass:<br/>  60, Mid: 70, Treble: 65 for a rockabilly twang. 3. Gain: High, Bass: 55, Mid:<br/>  65, Treble: 60 for a blues solo with presence.<br/></td></tr><tr id="62ff15a7-e0c6-4200-85ae-bf9e28103b4e"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">FD DLXR</td><td id="Jy?b" class="">Fender Deluxe Reverb</td><td id="LsW_" class="">Models the Fender Deluxe Reverb, offering lush cleans and spring reverb.</td><td id="KJlg" class="">Pop, Rock</td><td id="H&lt;Di" class="">Hank Marvin</td><td id=":y]v" class="">The Shadows</td><td id="sFiE" class="">1. Gain: Low, Bass: 55, Treble: 65 for a surf rock tone. 2. Gain: Medium,<br/>  Bass: 60, Treble: 70 for pop-rock rhythm. 3. Gain: High, Bass: 50, Treble: 60<br/>  for an overdriven blues tone.<br/></td></tr><tr id="11a09abc-0a57-49fb-95b9-a25c068baecc"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">FD MASTER</td><td id="Jy?b" class="">Fender ToneMaster</td><td id="LsW_" class="">Based on the Fender ToneMaster, known for its versatile clean to<br/>  overdriven tones.<br/></td><td id="KJlg" class="">All</td><td id="H&lt;Di" class="">John Mayer</td><td id=":y]v" class="">Mayer&#x27;s Trio</td><td id="sFiE" class="">1. Gain: 55, Bass: 60, Mid: 65 for a clean tone with depth. 2. Gain: 70,<br/>  Bass: 55, Mid: 60, Treble: 70 for an edge of breakup tone. 3. Gain: 85, Bass:<br/>  50, Mid: 55, Treble: 75 for a smooth overdrive.<br/></td></tr><tr id="c70a55f7-5627-4bd0-a646-d38375592e11"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">UK 30A</td><td id="Jy?b" class="">Vox AC30</td><td id="LsW_" class="">Captures the chime and crunch of a classic British Class A amp.</td><td id="KJlg" class="">British Pop, Rock</td><td id="H&lt;Di" class="">The Edge</td><td id=":y]v" class="">The Beatles</td><td id="sFiE" class="">1. Gain: 60, Bass: 55, Treble: 70 for a jangly rhythm. 2. Gain: 75, Bass:<br/>  60, Treble: 65 for a singing lead. 3. Gain: 50, Bass: 60, Treble: 75 for a<br/>  clean tone with a British chime.<br/></td></tr><tr id="040bebee-c708-4247-817e-25dc21c12be5"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">BG MK1</td><td id="Jy?b" class="">Mesa Boogie Mark I</td><td id="LsW_" class="">Models the Mesa Boogie Mark I&#x27;s creamy overdrive and rich harmonics.</td><td id="KJlg" class="">Blues, Rock</td><td id="H&lt;Di" class="">Carlos Santana</td><td id=":y]v" class="">Santana</td><td id="sFiE" class="">1. Gain: 70, Bass: 65, Mid: 60 for a Santana-like lead tone. 2. Gain: 55,<br/>  Bass: 60, Mid: 65, Treble: 70 for a blues rhythm with warmth. 3. Gain: 80,<br/>  Bass: 55, Mid: 70, Treble: 65 for a rock lead with harmonics.<br/></td></tr><tr id="e677d8dd-c141-4fdc-926a-793216509a02"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">BG MK3</td><td id="Jy?b" class="">Mesa Boogie Mark III</td><td id="LsW_" class="">Emulates the Mesa Boogie Mark III, delivering a wide range of tones from<br/>  clean to heavy.<br/></td><td id="KJlg" class="">Rock, Metal</td><td id="H&lt;Di" class="">John Petrucci</td><td id=":y]v" class="">Dream Theater</td><td id="sFiE" class="">1. Gain1: 60, Gain2: 70 for a dynamic lead tone. 2. Gain1: 50, Gain2: 60,<br/>  Mid: High for a clean rhythm with punch. 3. Gain1: 80, Gain2: 85 for a<br/>  high-gain metal tone.<br/></td></tr><tr id="d6dc8634-d827-4d50-a457-217431ef0730"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">XtasyBlue</td><td id="Jy?b" class="">Bogner Ecstasy Blue Channel</td><td id="LsW_" class="">Models the Bogner Ecstasy Blue channel, versatile for both clean and<br/>  driven tones.<br/></td><td id="KJlg" class="">Rock, Fusion</td><td id="H&lt;Di" class="">Steve Vai</td><td id=":y]v" class="">Joe Bonamassa</td><td id="sFiE" class="">1. Gain: 60, Bass: 55, Mid: 65 for a dynamic clean tone. 2. Gain: 75,<br/>  Bass: 60, Mid: 70 for a bluesy crunch. 3. Gain: 85, Bass: 55, Mid: 60,<br/>  Treble: 75 for a fusion lead.<br/></td></tr><tr id="6465cfc8-eb58-4fed-924f-3b75a49b1098"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">HW 100</td><td id="Jy?b" class="">Hiwatt Custom 100</td><td id="LsW_" class="">Simulates the Hiwatt Custom 100 for its massive headroom and signature<br/>  British sound.<br/></td><td id="KJlg" class="">Rock, Prog Rock</td><td id="H&lt;Di" class="">David Gilmour</td><td id=":y]v" class="">Pink Floyd</td><td id="sFiE" class="">1. Gain: Low, Bass: 60, Mid: 70 for a clean Gilmour-like rhythm. 2. Gain:<br/>  Medium, Bass: 55, Mid: 65 for a driven prog tone. 3. Gain: High, Bass: 50,<br/>  Mid: 60 for a classic British lead.<br/></td></tr><tr id="60e6d31b-127e-42ef-b53c-e6e479c2226f"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">Recti ORG</td><td id="Jy?b" class="">Mesa Boogie Dual Rectifier</td><td id="LsW_" class="">Based on the Mesa Boogie Dual Rectifier Orange Channel, known for its<br/>  heavy distortion.<br/></td><td id="KJlg" class="">Metal, Hard Rock</td><td id="H&lt;Di" class="">Adam Jones</td><td id=":y]v" class="">Tool</td><td id="sFiE" class="">1. Mode: Modern, Gain: High for a heavy metal tone. 2. Mode: Vintage,<br/>  Gain: Medium for hard rock rhythm. 3. Mode: Modern, Gain: Max for lead tones<br/>  with massive sustain.<br/></td></tr><tr id="580012cf-1859-45b5-bbe8-0834d97bf473"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">ORG120</td><td id="Jy?b" class="">Orange Graphic 120</td><td id="LsW_" class="">Emulates the Orange Graphic 120, offering a distinct overdriven sound.</td><td id="KJlg" class="">Stoner Rock, Metal</td><td id="H&lt;Di" class="">Brent Hinds</td><td id=":y]v" class="">Mastodon</td><td id="sFiE" class="">1. Gain: 70, Bass: 65, Treble: 60 for a thick, sludgy tone. 2. Gain: 85,<br/>  Bass: 55, Treble: 70 for a lead with aggressive mids. 3. Gain: 55, Bass: 60,<br/>  Treble: 65 for a crunchy rhythm.<br/></td></tr><tr id="07f19932-b23a-4542-909b-65dfb98821bc"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">DZ DRV</td><td id="Jy?b" class="">Diezel Herbert</td><td id="LsW_" class="">Models the Diezel Herbert Channel2 for its articulate and tight metal<br/>  tones.<br/></td><td id="KJlg" class="">Metal, Djent</td><td id="H&lt;Di" class="">James Hetfield</td><td id=":y]v" class="">Metallica</td><td id="sFiE" class="">1. Gain: 85, Bass: 65, MidCut: Off for tight, palm-muted riffs. 2. Gain:<br/>  90, Bass: 60, MidCut: On, Deep: High for a deep, djenty tone. 3. Gain: 75,<br/>  Bass: 55, MidCut: On, Mid: High for articulate lead tones.<br/></td></tr><tr id="eca1057d-0fd2-4b71-a52c-0faa9795a3e6"><td id="^F~`" class="">Amp</td><td id="MBI&gt;" class="">MATCH30</td><td id="Jy?b" class="">Matchless DC-30</td><td id="LsW_" class="">Captures the sound of the Matchless DC-30 for its clear and articulate<br/>  cleans.<br/></td><td id="KJlg" class="">Alternative, Indie Rock</td><td id="H&lt;Di" class="">Thom Yorke</td><td id=":y]v" class="">Radiohead</td><td id="sFiE" class="">1. Gain1: 50 for a clean, chimey rhythm. 2. Gain2: 70, Tone2: Mid for an<br/>  overdriven British lead. 3. Gain1: 60, Cut: Low for a clean tone with a<br/>  slight edge.<br/></td></tr><tr id="559394ad-7b10-4cbc-84f3-1966477cfccf"><td id="^F~`" class="">Cabinet</td><td id="MBI&gt;" class="">MS4x12</td><td id="Jy?b" class="">Marshall 1960A 4x12 Cabinet</td><td id="LsW_" class="">Emulates a Marshall 4x12 cabinet, delivering classic rock tones.</td><td id="KJlg" class="">Hard Rock, Metal</td><td id="H&lt;Di" class="">Slash</td><td id=":y]v" class="">Guns N&#x27; Roses</td><td id="sFiE" class="">1. High: 7 for a brighter tone in solos. 2. Low: 6 for warmth in rhythms.<br/>  3. Mic: D57 for a focused, direct sound.<br/></td></tr><tr id="7a40d075-fe54-46aa-b980-407d70a412be"><td id="^F~`" class="">Cabinet</td><td id="MBI&gt;" class="">MS4x12GB</td><td id="Jy?b" class="">Marshall 1960B 4x12 Greenback Cabinet</td><td id="LsW_" class="">Models a Marshall with Greenback speakers for vintage tones.</td><td id="KJlg" class="">Classic Rock</td><td id="H&lt;Di" class="">Angus Young</td><td id=":y]v" class="">AC/DC</td><td id="sFiE" class="">1. High: 6, Low: 5 for a mid-focused crunch. 2. Mic: D57, High: 8 for a<br/>  biting lead tone. 3. Low: 7 for a thicker rhythm presence.<br/></td></tr><tr id="698a525f-4c2a-4b70-9be6-82a6b17003f9"><td id="^F~`" class="">Cabinet</td><td id="MBI&gt;" class="">MS4x12AL</td><td id="Jy?b" class="">Marshall JTM45 4x12 Alnico Cabinet</td><td id="LsW_" class="">Simulates a Marshall Alnico cabinet, known for smoother highs and mellow<br/>  mids.<br/></td><td id="KJlg" class="">Blues, Rock</td><td id="H&lt;Di" class="">Eric Clapton</td><td id=":y]v" class="">Cream</td><td id="sFiE" class="">1. High: 5 for smooth leads. 2. Low: 8, High: 4 for a full-bodied clean<br/>  tone. 3. Mic: D57 for capturing detailed articulations.<br/></td></tr><tr id="3546fd98-a3de-4862-867a-64113f9ab88a"><td id="^F~`" class="">Cabinet</td><td id="MBI&gt;" class="">FD2x12</td><td id="Jy?b" class="">Fender &#x27;65 Twin Reverb 2x12 Cabinet</td><td id="LsW_" class="">Captures the sound of a Fender Twin Reverb 2x12 cabinet.</td><td id="KJlg" class="">Jazz, Blues</td><td id="H&lt;Di" class="">John Mayer</td><td id=":y]v" class="">The John Mayer Trio</td><td id="sFiE" class="">1. High: 6 for clarity in jazz chords. 2. Low: 7 for deep blues tones. 3.<br/>  Mic: D57 for a balanced response.<br/></td></tr><tr id="ba33aaa9-6723-4407-a6fe-b4c35ab9cc56"><td id="^F~`" class="">Cabinet</td><td id="MBI&gt;" class="">FD-B4x10</td><td id="Jy?b" class="">Fender &#x27;59 Bassman 4x10 Cabinet</td><td id="LsW_" class="">Models a Fender Bassman 4x10 cabinet for punchy and dynamic response.</td><td id="KJlg" class="">Blues, Country</td><td id="H&lt;Di" class="">Stevie Ray Vaughan</td><td id=":y]v" class="">ZZ Top</td><td id="sFiE" class="">1. High: 7 for sharpness in leads. 2. Low: 7 for a grounded rhythm. 3.<br/>  Mic: D57 for live performance capture.<br/></td></tr><tr id="370aa77f-5289-45eb-aadd-e9b223facfc8"><td id="^F~`" class="">Cabinet</td><td id="MBI&gt;" class="">FD-DX1x12</td><td id="Jy?b" class="">Fender Deluxe Reverb 1x12 Cabinet</td><td id="LsW_" class="">Based on a Fender Deluxe Reverb 1x12 cabinet, offering a vintage sound.</td><td id="KJlg" class="">Rock, Blues</td><td id="H&lt;Di" class="">Neil Young</td><td id=":y]v" class="">Neil Young and Crazy Horse</td><td id="sFiE" class="">1. High: 6 for articulate clean tones. 2. Low: 5 for a balanced<br/>  overdriven sound. 3. Mic: D57 for a classic &#x27;60s rock tone.<br/></td></tr><tr id="e5da8c10-19cd-49b4-bda2-b3bcb491a4fb"><td id="^F~`" class="">Cabinet</td><td id="MBI&gt;" class="">RCT4x12</td><td id="Jy?b" class="">Mesa Boogie Rectifier 4x12 Cabinet</td><td id="LsW_" class="">Emulates a Mesa Boogie Rectifier cabinet for aggressive and modern metal<br/>  tones.<br/></td><td id="KJlg" class="">Metal, Hard Rock</td><td id="H&lt;Di" class="">James Hetfield</td><td id=":y]v" class="">Metallica</td><td id="sFiE" class="">1. High: 8 for aggressive highs in metal leads. 2. Low: 8 for a deep,<br/>  palm-muted rhythm. 3. Mic: D57 for a focused, punchy response.<br/></td></tr><tr id="30b17362-f597-4dd6-b78d-ad1af8a4e2aa"><td id="^F~`" class="">Cabinet</td><td id="MBI&gt;" class="">ORG4x12</td><td id="Jy?b" class="">Orange PPC412 4x12 Cabinet</td><td id="LsW_" class="">Models an Orange 4x12 cabinet, perfect for heavy, mid-focused tones.</td><td id="KJlg" class="">Stoner Rock, Metal</td><td id="H&lt;Di" class="">Brent Hinds</td><td id=":y]v" class="">Mastodon</td><td id="sFiE" class="">1. High: 7 for a cutting midrange in riffs. 2. Low: 6 for a rich,<br/>  full-bodied sound. 3. Mic: D57 for capturing the cabinet&#x27;s character in<br/>  studio recordings.<br/></td></tr><tr id="4eabff02-bef3-4838-8f09-a53ad07f096c"><td id="^F~`" class="">Cabinet</td><td id="MBI&gt;" class="">DZ4x12F</td><td id="Jy?b" class="">Diezel 4x12 Frontloaded Cabinet</td><td id="LsW_" class="">Simulates a Diezel 4x12 cabinet, known for precise and articulate metal<br/>  tones.<br/></td><td id="KJlg" class="">Metal, Progressive</td><td id="H&lt;Di" class="">Adam Jones</td><td id=":y]v" class="">Tool</td><td id="sFiE" class="">1. High: 9 for a tight, percussive attack. 2. Low: 5, High: 4 for a<br/>  balanced mix presence. 3. Mic: D57 for a detailed, clear capture.<br/></td></tr><tr id="34b9c4f6-32cf-4703-9f1c-48d21e82224b"><td id="^F~`" class="">Cabinet</td><td id="MBI&gt;" class="">MA2x12</td><td id="Jy?b" class="">Matchless DC-30 2x12 Cabinet</td><td id="LsW_" class="">Captures the boutique sound of a Matchless 2x12 cabinet for pristine<br/>  cleans.<br/></td><td id="KJlg" class="">Indie, Alternative</td><td id="H&lt;Di" class="">Chris Martin</td><td id=":y]v" class="">Coldplay</td><td id="sFiE" class="">1. High: 5 for a warm, clean rhythm. 2. Low: 4, High: 7 for a bright,<br/>  chimey tone. 3. Mic: D57 for a natural, acoustic-like quality.<br/></td></tr><tr id="8e588c2d-2b32-4413-aab2-884ff23d66b3"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">StereoCho</td><td id="Jy?b" class="">Stereo Chorus Pedal</td><td id="LsW_" class="">A rich, lush stereo chorus effect.</td><td id="KJlg" class="">Pop, Rock</td><td id="H&lt;Di" class="">The Edge</td><td id=":y]v" class="">U2</td><td id="sFiE" class="">1. Depth: 70, Rate: 5 for a wide, spatial sound. 2. Depth: 50, Rate: 7<br/>  for a shimmering rhythm. 3. Depth: 80, Rate: 4, Tone: High for ethereal<br/>  leads.<br/></td></tr><tr id="ae8133d0-3e9a-498a-8cdd-8f523dc5fadd"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">Phaser</td><td id="Jy?b" class="">Phaser Pedal</td><td id="LsW_" class="">Adds a swirling, whooshing modulation effect.</td><td id="KJlg" class="">Funk, Rock</td><td id="H&lt;Di" class="">Eddie Van Halen</td><td id=":y]v" class="">Van Halen</td><td id="sFiE" class="">1. Color: 4 STG, Depth: 70 for classic rock soloing. 2. Color: 8 STG,<br/>  Depth: 50, Rate: Slow for a subtle movement in clean chords. 3. Color: INV 4,<br/>  Depth: 80, Rate: Medium for a pronounced phase effect.<br/></td></tr><tr id="802c5057-9e69-4d98-a948-b56a02261012"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">VinFLNGR</td><td id="Jy?b" class="">MXR M-117R Flanger</td><td id="LsW_" class="">Models a vintage flanger with analog warmth.</td><td id="KJlg" class="">Psychedelic, Rock</td><td id="H&lt;Di" class="">David Gilmour</td><td id=":y]v" class="">Pink Floyd</td><td id="sFiE" class="">1. PreD: Low, Depth: High, Rate: Slow for a trippy vibe. 2. PreD: Medium,<br/>  Depth: Medium, Rate: Medium for a classic jet-plane flange. 3. PreD: High,<br/>  Depth: Low, Rate: Fast for a subtle texture.<br/></td></tr><tr id="5cf2c452-f4bd-400d-ba12-0c9b1b8beac6"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">TheVibe</td><td id="Jy?b" class="">Uni-Vibe</td><td id="LsW_" class="">Simulates a rotating speaker effect for a throbbing, pulsating sound.</td><td id="KJlg" class="">Psychedelic, Classic Rock</td><td id="H&lt;Di" class="">Robin Trower</td><td id=":y]v" class="">Procol Harum</td><td id="sFiE" class="">1. Speed: Slow, Depth: High for a Hendrix-like swirl. 2. Speed: Fast,<br/>  Depth: Medium for an energetic rotary effect. 3. Mode: CHORS, Depth: Low for<br/>  a subtle modulation.<br/></td></tr><tr id="855b6e7e-10d8-4ae8-ae68-2bc5b2ab4136"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">Vibrato</td><td id="Jy?b" class="">Vibrato Pedal</td><td id="LsW_" class="">Adds a varying pitch modulation, similar to a vibrato arm on a guitar.</td><td id="KJlg" class="">Blues, Jazz</td><td id="H&lt;Di" class="">B.B. King</td><td id=":y]v" class="">The BB King Blues Band</td><td id="sFiE" class="">1. Depth: High, Rate: Slow for deep, expressive vibrato. 2. Depth:<br/>  Medium, Rate: Medium for a natural vibrato effect. 3. Depth: Low, Rate: Fast<br/>  for a quirky, Leslie-like tone.<br/></td></tr><tr id="1641fcc0-c016-41f3-98ea-c9156dd5a29e"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">Octave</td><td id="Jy?b" class="">Octave Pedal</td><td id="LsW_" class="">Adds octaves above or below the original note for a fuller sound.</td><td id="KJlg" class="">Rock, Experimental</td><td id="H&lt;Di" class="">Jack White</td><td id=":y]v" class="">The White Stripes</td><td id="sFiE" class="">1. OCT1: High, OCT2: Low for a 12-string guitar effect. 2. OCT1: Low,<br/>  OCT2: High for a bass-like foundation. 3. OCT1: Medium, OCT2: Medium, Dry:<br/>  High for a balanced octave mix.<br/></td></tr><tr id="749348cd-e72b-4467-a8a6-b32cf15b82c0"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">RingMod</td><td id="Jy?b" class="">Ring Modulator Pedal</td><td id="LsW_" class="">Produces a metallic, atonal effect by multiplying frequencies.</td><td id="KJlg" class="">Experimental, Electronic</td><td id="H&lt;Di" class="">Tom Morello</td><td id=":y]v" class="">Rage Against The Machine</td><td id="sFiE" class="">1. FREQ: High for a robotic sound. 2. FREQ: Low, Tone: High for a<br/>  bell-like effect. 3. FREQ: Medium, Balance: High for a dissonant harmony.<br/></td></tr><tr id="bf5a9c86-0572-4f1d-b78b-e962ccfe947a"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">Detune</td><td id="Jy?b" class="">Detune Effect Pedal</td><td id="LsW_" class="">Slightly shifts the pitch for a chorus-like effect without the<br/>  modulation.<br/></td><td id="KJlg" class="">Pop, Rock</td><td id="H&lt;Di" class="">Andy Summers</td><td id=":y]v" class="">The Police</td><td id="sFiE" class="">1. Cent: -10 for a thickened rhythm tone. 2. Cent: +10 for a doubled lead<br/>  sound. 3. Cent: 0, PreD: High for a subtle widening effect.<br/></td></tr><tr id="6cb20d49-cd77-49a0-a374-df8101d07a1f"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">PitchSHFT</td><td id="Jy?b" class="">Pitch Shifter Pedal</td><td id="LsW_" class="">Changes the pitch of the original signal, can create harmonies.</td><td id="KJlg" class="">Rock, Metal</td><td id="H&lt;Di" class="">Tom Morello</td><td id=":y]v" class="">Rage Against The Machine</td><td id="sFiE" class="">1. Shift: +12 for a higher octave solo. 2. Shift: -12 for a lower octave<br/>  effect. 3. Shift: +7 for a fifth harmony.<br/></td></tr><tr id="610aa5a3-805a-47f6-9e96-3e4b8770cb7f"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">Tremolo</td><td id="Jy?b" class="">Tremolo Pedal</td><td id="LsW_" class="">Varies the volume at a regular rate for an amplitude modulation effect.</td><td id="KJlg" class="">Rockabilly, Surf</td><td id="H&lt;Di" class="">Dick Dale</td><td id=":y]v" class="">Dick Dale and His Del-Tones</td><td id="sFiE" class="">1. Wave: TRI, Depth: High for a classic surf rock tremolo. 2. Wave: SQR,<br/>  Depth: Low for a staccato rhythm effect. 3. Wave: TUBE, Depth: Medium, Rate:<br/>  Slow for a smooth pulsating effect.<br/></td></tr><tr id="dbfdb5d0-9584-4f39-b90d-6462aeb3a1a1"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">Chorus</td><td id="Jy?b" class="">Chorus Pedal</td><td id="LsW_" class="">Mixes the dry signal with a modulated signal to create a doubling effect.</td><td id="KJlg" class="">Rock, Pop</td><td id="H&lt;Di" class="">Kurt Cobain</td><td id=":y]v" class="">Nirvana</td><td id="sFiE" class="">1. Depth: High, Rate: Slow for a dreamy chorus. 2. Depth: Low, Rate: Fast<br/>  for a tight doubling effect. 3. Depth: Medium, Rate: Medium, Tone: High for a<br/>  bright, pop-friendly tone.<br/></td></tr><tr id="026bb50e-ed52-4f25-8665-a68c9f573c8d"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">MonoPitch</td><td id="Jy?b" class="">Monophonic Pitch Shifter Pedal</td><td id="LsW_" class="">A monophonic pitch shifter ideal for single-note lines.</td><td id="KJlg" class="">Funk, Jazz</td><td id="H&lt;Di" class="">Herbie Hancock</td><td id=":y]v" class="">Herbie Hancock and The Headhunters</td><td id="sFiE" class="">1. Shift: +12 for lead lines an octave higher. 2. Shift: -7 for a funk<br/>  bass line effect. 3. Shift: +5 for a major third harmony.<br/></td></tr><tr id="fa4be6c8-6424-4557-9049-b20e97cb21fa"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">Slicer</td><td id="Jy?b" class="">Slicer Pedal</td><td id="LsW_" class="">Creates a rhythmic pattern by chopping up the signal.</td><td id="KJlg" class="">Dance, Electronic</td><td id="H&lt;Di" class="">Daft Punk</td><td id=":y]v" class="">Daft Punk</td><td id="sFiE" class="">1. Pattern: 10, Speed: Medium for a dance rhythm. 2. Pattern: 5, Speed:<br/>  Slow for a groovy modulation. 3. Pattern: 15, Speed: Fast for a complex,<br/>  syncopated effect.<br/></td></tr><tr id="3b764d8c-7c73-473b-9337-e3c36b3215c8"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">CloneCho</td><td id="Jy?b" class="">Electro-Harmonix Small Clone Chorus</td><td id="LsW_" class="">A clone of the Small Clone chorus, known for its lush and warm sound.</td><td id="KJlg" class="">Alternative, Grunge</td><td id="H&lt;Di" class="">Kurt Cobain</td><td id=":y]v" class="">Nirvana</td><td id="sFiE" class="">1. Depth: High, Rate: Slow for a thick Nirvana-like tone. 2. Depth: Low,<br/>  Rate: Medium for a subtle modulation. 3. Depth: High, Rate: Fast for a<br/>  seasick, wobbly effect.<br/></td></tr><tr id="52308291-1c83-4fb6-805c-629047a38970"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">SuperCho</td><td id="Jy?b" class="">BOSS CH-1 Super Chorus</td><td id="LsW_" class="">Models a BOSS CH-1 Super Chorus for a clean and brilliant chorus effect.</td><td id="KJlg" class="">Pop, Rock</td><td id="H&lt;Di" class="">Alex Lifeson</td><td id=":y]v" class="">Rush</td><td id="sFiE" class="">1. Depth: High, Rate: Medium for a clear, shimmering chorus. 2. Depth:<br/>  Low, Rate: Slow for a slight, airy modulation. 3. Depth: Medium, Rate: High<br/>  for a vibrant, moving texture.<br/></td></tr><tr id="158a66cf-ec3b-4872-8ab1-160abb7025ad"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">StonePha</td><td id="Jy?b" class="">Electro-Harmonix Small Stone Phaser</td><td id="LsW_" class="">Simulates the Electro-Harmonix Small Stone for a thick, phase-shifting<br/>  sound.<br/></td><td id="KJlg" class="">Psychedelic, Rock</td><td id="H&lt;Di" class="">Josh Homme</td><td id=":y]v" class="">Queens of the Stone Age</td><td id="sFiE" class="">1. Color: 1 for a warm, analog phase. 2. Color: 2, Depth: High for a<br/>  resonant psychedelic effect. 3. Color: 1, Depth: Low, Rate: Slow for a gentle<br/>  phase shift.<br/></td></tr><tr id="463f928e-d4dc-4b1c-840e-6e1b27f64c39"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">CoronaTri</td><td id="Jy?b" class="">TC Electronic Corona Chorus</td><td id="LsW_" class="">A model of tc electronic&#x27;s Corona Tri-Chorus for lush, three-dimensional<br/>  tones.<br/></td><td id="KJlg" class="">All</td><td id="H&lt;Di" class="">-</td><td id=":y]v" class="">-</td><td id="sFiE" class="">1. Depth: High, Speed: Medium for a wide stereo chorus. 2. Depth: Low,<br/>  Speed: Slow for a light, ethereal touch. 3. Depth: Medium, Speed: High, Tone:<br/>  High for a bright, modulated rhythm.<br/></td></tr><tr id="f477d026-65e3-4ddf-a5c8-c5968a1d842a"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">BendCho</td><td id="Jy?b" class="">Pitch Bending Chorus Pedal</td><td id="LsW_" class="">Provides a pitch-bending chorus effect.</td><td id="KJlg" class="">Experimental, Prog Rock</td><td id="H&lt;Di" class="">Steve Vai</td><td id=":y]v" class="">Dream Theater</td><td id="sFiE" class="">1. Mode: UP, Depth: High for a pitch-bending solo. 2. Mode: DOWN, Depth:<br/>  Low, Time: Slow for a detuned effect. 3. Mode: UP, Depth: Medium, Time:<br/>  Medium for a chorus with a twist.<br/></td></tr><tr id="7092331a-be14-44a5-88d7-3ac1ea8849e3"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">AnalogCho</td><td id="Jy?b" class="">Analog Chorus Pedal</td><td id="LsW_" class="">Replicates a classic analog chorus for warm, vintage modulation.</td><td id="KJlg" class="">Blues, Classic Rock</td><td id="H&lt;Di" class="">Andy Summers</td><td id=":y]v" class="">The Police</td><td id="sFiE" class="">1. Depth: High, Rate: Medium for a rich, analog chorus. 2. Depth: Low,<br/>  Rate: Slow for a subtle modulation on clean tones. 3. Depth: Medium, Rate:<br/>  Fast for a vibrant, Leslie-like effect.<br/></td></tr><tr id="6f2e0822-69fc-498d-bc8e-6bf20d214033"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">WarpPhase</td><td id="Jy?b" class="">Warped Phaser Pedal</td><td id="LsW_" class="">A phaser with a unique warping effect.</td><td id="KJlg" class="">Funk, Psychedelic</td><td id="H&lt;Di" class="">George Clinton</td><td id=":y]v" class="">Parliament-Funkadelic</td><td id="sFiE" class="">1. Mode: GO BACK, Speed: Medium for a retro-futuristic phase. 2. Mode: GO<br/>  BACK, Speed: Slow, RESO: High for a swirling, deep phase. 3. Mode: GO BACK,<br/>  Speed: Fast for a rapid, pulsating phase.<br/></td></tr><tr id="8c43aa8e-fdb5-4104-92a1-3cb954f1cdca"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">Duo Phase</td><td id="Jy?b" class="">Dual Phaser Pedal</td><td id="LsW_" class="">Combines two phasers for complex, rich textures.</td><td id="KJlg" class="">Ambient, Progressive</td><td id="H&lt;Di" class="">David Gilmour</td><td id=":y]v" class="">Pink Floyd</td><td id="sFiE" class="">1. DPT A: High, RateA: Slow for a layered phasing effect. 2. Link: SERI,<br/>  DPT B: Medium, RateB: Medium for a nuanced phase texture. 3. Link: PARA, DPT<br/>  A: Low, DPT B: High, RateA: Slow, RateB: Fast for two distinct phasing<br/>  patterns.<br/></td></tr><tr id="9ba3e4bb-918c-4d3d-9dbc-7ab0563f0687"><td id="^F~`" class="">Modulation</td><td id="MBI&gt;" class="">HPS</td><td id="Jy?b" class="">Harmonizer Pedal</td><td id="LsW_" class="">An intelligent harmonizer that adds harmonies based on scale and key.</td><td id="KJlg" class="">Melodic Metal, Progressive</td><td id="H&lt;Di" class="">Michael Romeo</td><td id=":y]v" class="">Symphony X</td><td id="sFiE" class="">1. Scale: m, Key: E for a minor key harmony in E. 2. Scale: M, Key: C for<br/>  a major key harmony in C. 3. Scale: -3, Key: G for a minor third harmony in<br/>  G.<br/></td></tr><tr id="982a4e87-3be6-40e1-9a81-1572c7d90709"><td id="^F~`" class="">SFX</td><td id="MBI&gt;" class="">Bomber</td><td id="Jy?b" class="">Sound Effects Generator</td><td id="LsW_" class="">Produces explosive, bomb-dropping sound effects.</td><td id="KJlg" class="">Sound Design, Experimental</td><td id="H&lt;Di" class="">Tom Morello</td><td id=":y]v" class="">Rage Against The Machine</td><td id="sFiE" class="">1. Decay: High for a dramatic effect in transitions. 2. Tone: Mid, Mix:<br/>  Low for background explosions. 3. ON/OFF: Trigger for on-demand bomb drops<br/>  during performance.<br/></td></tr><tr id="5e7de78b-97b1-464a-8751-547712a141d1"><td id="^F~`" class="">SFX</td><td id="MBI&gt;" class="">AutoPan</td><td id="Jy?b" class="">Auto-Pan Pedal</td><td id="LsW_" class="">Automatically pans the sound between left and right channels.</td><td id="KJlg" class="">Electronic, Ambient</td><td id="H&lt;Di" class="">Pink Floyd</td><td id=":y]v" class="">The Alan Parsons Project</td><td id="sFiE" class="">1. Rate: Medium, Width: High for a psychedelic effect. 2. Rate: Slow,<br/>  Width: Low for subtle movement in ambient tracks. 3. Rate: Fast, Width: High,<br/>  Clip: High for an intense stereo effect in electronic music.<br/></td></tr><tr id="041629ab-8486-4eea-b294-8f58bc8e1de0"><td id="^F~`" class="">SFX</td><td id="MBI&gt;" class="">LoopRoll</td><td id="Jy?b" class="">Loop Station, Glitch Effect Pedal</td><td id="LsW_" class="">Repeats a section of the input signal like a stutter or glitch effect.</td><td id="KJlg" class="">EDM, Hip-Hop</td><td id="H&lt;Di" class="">Skrillex</td><td id=":y]v" class="">Daft Punk</td><td id="sFiE" class="">1. Time: Short, Duty: High for a rapid-fire stutter. 2. Time: Medium,<br/>  Duty: Medium for a rhythmic loop effect. 3. Time: Long, Duty: Low for a<br/>  looping end-of-measure fill.<br/></td></tr><tr id="e39cb7db-6a71-4e4b-ad0c-5f16c08f3029"><td id="^F~`" class="">SFX</td><td id="MBI&gt;" class="">HotSpice</td><td id="Jy?b" class="">Sitar Emulation Pedal</td><td id="LsW_" class="">Simulates a sitar tone, adding an exotic flavor to your guitar sound.</td><td id="KJlg" class="">World, Psychedelic</td><td id="H&lt;Di" class="">Ravi Shankar</td><td id=":y]v" class="">The Beatles</td><td id="sFiE" class="">1. Bend: Medium, Buzz: High for a realistic sitar tone. 2. Bend: Low,<br/>  +1oct: Low for a subtle sitar-like resonance. 3. Bend: High, +1oct: High,<br/>  Buzz: High for a prominent, droning sitar sound.<br/></td></tr><tr id="d5d90203-ad95-4607-8827-7fc8d545ce49"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">Delay</td><td id="Jy?b" class="">Standard Digital Delay Pedal</td><td id="LsW_" class="">A basic delay effect for a wide range of applications.</td><td id="KJlg" class="">All</td><td id="H&lt;Di" class="">The Edge</td><td id=":y]v" class="">U2</td><td id="sFiE" class="">1. Time: 375ms, F.B: 50 for rhythmic delay. 2. Time: 500ms, F.B: 70 for<br/>  lead solos. 3. Time: 250ms, F.B: 30 for slap-back effects.<br/></td></tr><tr id="3b60e376-ceb8-4654-8618-d240ded04ead"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">AnalogDly</td><td id="Jy?b" class="">Analog Delay Pedal</td><td id="LsW_" class="">Replicates the warm, decaying echoes of an analog delay.</td><td id="KJlg" class="">Blues, Rock</td><td id="H&lt;Di" class="">David Gilmour</td><td id=":y]v" class="">Pink Floyd</td><td id="sFiE" class="">1. Time: 300ms, F.B: 60 for Gilmour-style solos. 2. Time: 600ms, F.B: 40<br/>  for ambient textures. 3. Time: 450ms, F.B: 55, Mix: 50 for a rhythmic<br/>  backing.<br/></td></tr><tr id="a640ab38-b1ba-4ca7-b965-2b060a14f002"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">TapeEcho</td><td id="Jy?b" class="">Tape Echo Unit</td><td id="LsW_" class="">Simulates the classic sound of a tape echo delay with variable pitch.</td><td id="KJlg" class="">Vintage Rock, Reggae</td><td id="H&lt;Di" class="">Jimmy Page</td><td id=":y]v" class="">Led Zeppelin</td><td id="sFiE" class="">1. Time: 550ms, F.B: 45 for Page-like echoes. 2. Time: 750ms, F.B: 30 for<br/>  dub effects. 3. Time: 200ms, F.B: 70 for rockabilly sounds.<br/></td></tr><tr id="8d75b8c5-97ad-4f14-b4f7-63df1a53e429"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">ReverseDL</td><td id="Jy?b" class="">Reverse Delay Pedal</td><td id="LsW_" class="">Plays the delay line in reverse for a surreal, psychedelic effect.</td><td id="KJlg" class="">Psychedelic, Experimental</td><td id="H&lt;Di" class="">Jimi Hendrix</td><td id=":y]v" class="">The Jimi Hendrix Experience</td><td id="sFiE" class="">1. Time: 700ms, F.B: 50 for psychedelic leads. 2. Time: 500ms, F.B: 30<br/>  for textural rhythms. 3. Time: 1000ms, F.B: 60, BAL: 50 for ambient pads.<br/></td></tr><tr id="d4aedf00-3333-4fdb-a38d-b21a539e6415"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">ModDelay</td><td id="Jy?b" class="">Modulated Delay Pedal</td><td id="LsW_" class="">A delay effect with added modulation for a chorus-like echo.</td><td id="KJlg" class="">Pop, Rock</td><td id="H&lt;Di" class="">Andy Summers</td><td id=":y]v" class="">The Police</td><td id="sFiE" class="">1. Time: 400ms, F.B: 40, Mod: On for chorus-echoes. 2. Time: 300ms, F.B:<br/>  60 for a modulated rhythm. 3. Time: 600ms, F.B: 20, Mix: 70 for a spacious<br/>  lead tone.<br/></td></tr><tr id="21d55a73-648a-4742-9cc4-862b96610b18"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">P-P Delay</td><td id="Jy?b" class="">Ping-Pong Delay Pedal</td><td id="LsW_" class="">Ping-pong delay for stereo spread effects.</td><td id="KJlg" class="">Electronic, Ambient</td><td id="H&lt;Di" class="">Brian Eno</td><td id=":y]v" class="">Roxy Music</td><td id="sFiE" class="">1. Time: 250ms, F.B: 50 for stereo rhythmic delays. 2. Time: 500ms, F.B:<br/>  70 for wide ambient spaces. 3. Time: 375ms, F.B: 60, Mix: 75 for bouncing<br/>  echoes.<br/></td></tr><tr id="9b06b682-ba44-47b3-916e-241a17997cfb"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">FilterDly</td><td id="Jy?b" class="">Filtered Delay Pedal</td><td id="LsW_" class="">A filtered delay that can be adjusted to emphasize certain frequencies.</td><td id="KJlg" class="">Dance, Electronic</td><td id="H&lt;Di" class="">Deadmau5</td><td id=":y]v" class="">Deadmau5</td><td id="sFiE" class="">1. Time: 300ms, F.B: 50, High: 70 for a bright, dance delay. 2. Time:<br/>  450ms, F.B: 60, Low: 80 for a warmer echo. 3. Time: 250ms, F.B: 30, High: 50,<br/>  Mix: 80 for a filtered slap-back.<br/></td></tr><tr id="140f78e4-4998-49cc-b769-662d59b95472"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">Dual DLY</td><td id="Jy?b" class="">Dual Delay Pedal</td><td id="LsW_" class="">Two independent delays in one effect for complex rhythmic patterns.</td><td id="KJlg" class="">Progressive, Fusion</td><td id="H&lt;Di" class="">Steve Vai</td><td id=":y]v" class="">Dream Theater</td><td id="sFiE" class="">1. TimeA: 300ms, TimeB: 450ms for polyrhythmic delays. 2. TimeA: 500ms,<br/>  TimeB: 750ms, F.B A: 40, F.B B: 30 for layered echoes. 3. TimeA: 250ms,<br/>  TimeB: 375ms, DlyMx: High for interweaving delay lines.<br/></td></tr><tr id="deff78ef-ea9f-431a-bc53-4ea87ee7c600"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">Pitch DLY</td><td id="Jy?b" class="">Pitch Shifting Delay Pedal</td><td id="LsW_" class="">Delay with a pitch shifter on the repeats for harmonized echoes.</td><td id="KJlg" class="">Experimental, Prog Rock</td><td id="H&lt;Di" class="">Jonny Greenwood</td><td id=":y]v" class="">Radiohead</td><td id="sFiE" class="">1. Pitch: +5, Time: 500ms for harmonic delays. 2. Pitch: -7, Time: 300ms<br/>  for dissonant echoes. 3. Pitch: +12, Time: 750ms, Mix: 70 for octave-up<br/>  repeats.<br/></td></tr><tr id="4eddb0f7-fff7-4ae4-9b9c-cdcfe6ddf677"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">SlapBackD</td><td id="Jy?b" class="">Slapback Delay Pedal</td><td id="LsW_" class="">Short delay time for a slap-back echo commonly used in rockabilly.</td><td id="KJlg" class="">Rockabilly, Country</td><td id="H&lt;Di" class="">Scotty Moore</td><td id=":y]v" class="">Elvis Presley</td><td id="sFiE" class="">1. Time: 150ms, F.B: 20 for classic slap-back. 2. Time: 200ms, F.B: 10<br/>  for a tighter rhythm effect. 3. Time: 100ms, F.B: 30, Mix: 80 for a prominent<br/>  echo on lead lines.<br/></td></tr><tr id="4905d00a-cc85-4c46-9cd3-932531c933ba"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">A-Pan DLY</td><td id="Jy?b" class="">Auto-Panning Delay Pedal</td><td id="LsW_" class="">Auto-panning delay for a moving echo effect across the stereo field.</td><td id="KJlg" class="">Electronic, Ambient</td><td id="H&lt;Di" class="">The Chemical Brothers</td><td id=":y]v" class="">The Chemical Brothers</td><td id="sFiE" class="">1. Time: 500ms, F.B: 50, Cycle: Medium for a sweeping echo. 2. Time:<br/>  250ms, F.B: 70, Cycle: Slow for a drifting delay. 3. Time: 600ms, F.B: 40,<br/>  Cycle: Fast, Width: High for a dramatic, panning echo.<br/></td></tr><tr id="e6c5a50b-3c64-427a-a9a9-190ec2ff6847"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">PhaseDly</td><td id="Jy?b" class="">Phaser + Delay Pedal</td><td id="LsW_" class="">Combines a phaser with delay for a swirling, spacey echo.</td><td id="KJlg" class="">Psychedelic, Space Rock</td><td id="H&lt;Di" class="">Pink Floyd</td><td id=":y]v" class="">Pink Floyd</td><td id="sFiE" class="">1. Time: 450ms, F.B: 60, Color: 4 STG for a Gilmour-style phase-delay. 2.<br/>  Time: 650ms, F.B: 50, Color: 8 STG for a deep, phasey texture. 3. Time:<br/>  350ms, F.B: 70, Color: INV 4, Depth: High for a unique phased echo.<br/></td></tr><tr id="bc09cfa9-1623-47b0-9496-e0b62eb265de"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">TapeEcho3</td><td id="Jy?b" class="">Maestro Echoplex EP-3</td><td id="LsW_" class="">Third iteration of the tape echo emulation with enhanced realism.</td><td id="KJlg" class="">Blues, Vintage Rock</td><td id="H&lt;Di" class="">Eric Johnson</td><td id=":y]v" class="">The Ventures</td><td id="sFiE" class="">1. Gain: 70, Time: 500ms for a warm, saturated echo. 2. Gain: 50, Time:<br/>  750ms, F.B: 30 for a spacious, vintage sound. 3. Gain: 80, Time: 300ms, F.B:<br/>  60, Mix: 50 for a bold, pronounced echo.<br/></td></tr><tr id="30d3963f-d4c6-441f-b959-6c7e547b537b"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">ICE Delay</td><td id="Jy?b" class="">ICE Effect Delay Pedal</td><td id="LsW_" class="">Adds shimmering, crystalline textures to the delay repeats.</td><td id="KJlg" class="">Ambient, Post-Rock</td><td id="H&lt;Di" class="">Sigur Rós</td><td id=":y]v" class="">Sigur Rós</td><td id="sFiE" class="">1. INTVL: OCT, Time: 600ms for an ethereal soundscape. 2. INTVL: +5th,<br/>  Time: 800ms, F.B: 40 for a majestic, choral effect. 3. INTVL: +OCT, Time:<br/>  1000ms, F.B: 50, Mix: High for a sparkling, atmospheric delay.<br/></td></tr><tr id="7ba9bf01-00ce-41cf-8272-d49a889e4369"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">SlwAtkDly</td><td id="Jy?b" class="">Slow Attack Delay Pedal</td><td id="LsW_" class="">Combines slow attack with delay for volume-swelling echoes.</td><td id="KJlg" class="">Ambient, Worship</td><td id="H&lt;Di" class="">The Edge</td><td id=":y]v" class="">U2</td><td id="sFiE" class="">1. Swell: High, Time: 400ms for an ambient swell effect. 2. Swell:<br/>  Medium, Time: 600ms for a pulsating echo. 3. Swell: Low, Time: 500ms, F.B:<br/>  40, Mix: High for a gradual, crescendoing echo.<br/></td></tr><tr id="173ac50f-0b4e-43ff-8759-8a5799575da4"><td id="^F~`" class="">Delay</td><td id="MBI&gt;" class="">SoftEcho</td><td id="Jy?b" class="">Soft Focus Delay Pedal</td><td id="LsW_" class="">Provides a delay with softened repeats for a more subtle echo.</td><td id="KJlg" class="">Acoustic, Ballad</td><td id="H&lt;Di" class="">John Mayer</td><td id=":y]v" class="">John Mayer Trio</td><td id="sFiE" class="">1. MOD: On, Time: 380ms for a soft, modulated echo. 2. MOD: Off, Time:<br/>  450ms, F.B: 30 for a gentle, fading echo. 3. MOD: On, Time: 300ms, F.B: 50,<br/>  Mix: Low for a barely-there, soft repeat.<br/></td></tr><tr id="ee89d6fc-2d21-4489-9ed9-3203822dd8b4"><td id="^F~`" class="">Reverb</td><td id="MBI&gt;" class="">Spring</td><td id="Jy?b" class="">Spring Reverb Tank</td><td id="LsW_" class="">Simulates the twangy and splashy characteristics of a spring reverb.</td><td id="KJlg" class="">Surf, Rockabilly</td><td id="H&lt;Di" class="">Dick Dale</td><td id=":y]v" class="">The Beach Boys</td><td id="sFiE" class="">1. Decay: 5 for a subtle drip on surf licks. 2. Decay: 8 for a pronounced<br/>  springy sound. 3. Mix: 70 for an ambient wash on clean chords.<br/></td></tr><tr id="31ea3853-8574-401d-acc7-cc39eaaad840"><td id="^F~`" class="">Reverb</td><td id="MBI&gt;" class="">FD Spring</td><td id="Jy?b" class="">Fender Twin Reverb Spring</td><td id="LsW_" class="">Models the reverb found in a Fender Twin Reverb, known for its lush<br/>  response.<br/></td><td id="KJlg" class="">Country, Blues</td><td id="H&lt;Di" class="">Merle Haggard</td><td id=":y]v" class="">The Eagles</td><td id="sFiE" class="">1. Color: Bright, Mix: 50 for a sparkling clean tone. 2. Color: Warm,<br/>  Mix: 60 for a smooth blues response. 3. Hi: 7 for enhanced clarity on leads.<br/></td></tr><tr id="dc834c22-f389-4110-bd20-e2e7335aea59"><td id="^F~`" class="">Reverb</td><td id="MBI&gt;" class="">Plate</td><td id="Jy?b" class="">EMT Plate Reverb</td><td id="LsW_" class="">Emulates the dense and even decay of a studio plate reverb.</td><td id="KJlg" class="">Studio Recording</td><td id="H&lt;Di" class="">George Martin</td><td id=":y]v" class="">The Beatles</td><td id="sFiE" class="">1. Decay: 6, PreD: 20 for a classic studio plate sound. 2. Decay: 8 for a<br/>  lush vocal reverb. 3. Mix: 75 for a strong presence in mixes.<br/></td></tr><tr id="ecdeae1c-ecf3-437e-9e4e-1e0968726c3c"><td id="^F~`" class="">Reverb</td><td id="MBI&gt;" class="">EarlyRef</td><td id="Jy?b" class="">Early Reflections Reverb Processor</td><td id="LsW_" class="">Reproduces only the early reflections of a reverb for a discrete<br/>  ambiance.<br/></td><td id="KJlg" class="">Jazz, Acoustic</td><td id="H&lt;Di" class="">Pat Metheny</td><td id=":y]v" class="">Norah Jones</td><td id="sFiE" class="">1. Decay: 3 for a tight room sound. 2. Shape: -5 for a more focused<br/>  reverb on solos. 3. Tone: 5 for clarity on acoustic instruments.<br/></td></tr><tr id="24919937-1fe7-4150-87ca-0f02fe0012c2"><td id="^F~`" class="">Reverb</td><td id="MBI&gt;" class="">Church</td><td id="Jy?b" class="">Church Acoustics</td><td id="LsW_" class="">Simulates the long and expansive reverberations of a church hall.</td><td id="KJlg" class="">Classical, Choir</td><td id="H&lt;Di" class="">Andrea Bocelli</td><td id=":y]v" class="">Enigma</td><td id="sFiE" class="">1. PreD: 0, Decay: 10 for a grand, spacious reverb. 2. Mix: 80 for an<br/>  ethereal choir sound. 3. Decay: 7, PreD: 50 for orchestral pieces.<br/></td></tr><tr id="671fcfc0-6835-48cd-a906-6490a36f3415"><td id="^F~`" class="">Reverb</td><td id="MBI&gt;" class="">Chamber</td><td id="Jy?b" class="">Chamber Reverb Room</td><td id="LsW_" class="">Captures the sound of a chamber room, often used in classical recordings.</td><td id="KJlg" class="">Classical, Opera</td><td id="H&lt;Di" class="">Luciano Pavarotti</td><td id=":y]v" class="">Wiener Philharmoniker</td><td id="sFiE" class="">1. PreD: 0, Decay: 6 for intimate chamber music. 2. Decay: 9, Mix: 60 for<br/>  a full-bodied opera reverb. 3. PreD: 20, Mix: 70 for a solo violin.<br/></td></tr><tr id="4feca7b5-d3e7-445e-8487-5867960af8b5"><td id="^F~`" class="">Reverb</td><td id="MBI&gt;" class="">GateRev</td><td id="Jy?b" class="">Gated Reverb Processor</td><td id="LsW_" class="">A gated reverb that cuts off abruptly, famous in &#x27;80s snare drums.</td><td id="KJlg" class="">Pop, Rock</td><td id="H&lt;Di" class="">Phil Collins</td><td id=":y]v" class="">Genesis</td><td id="sFiE" class="">1. Decay: 3, Tone: 6 for that iconic &#x27;80s snare sound. 2. Color: 2,<br/>  Decay: 5 for a percussive vocal effect. 3. Tone: 7, BAL: 50 for gated rhythm<br/>  guitars.<br/></td></tr><tr id="93858b85-1d54-49fb-9d64-a0307c45c548"><td id="^F~`" class="">Reverb</td><td id="MBI&gt;" class="">Air</td><td id="Jy?b" class="">Ambient Reverb Pedal</td><td id="LsW_" class="">Provides a sense of open space, like playing outdoors.</td><td id="KJlg" class="">Ambient, Folk</td><td id="H&lt;Di" class="">Jack Johnson</td><td id=":y]v" class="">Sigur Rós</td><td id="sFiE" class="">1. Size: 8 for a breezy, open-sky sound. 2. REF: Low, Mix: High for a<br/>  subtle, airy ambiance. 3. Size: 5, Mix: 60 for an outdoor performance feel.<br/></td></tr><tr id="c73a76cd-b0ad-40ee-8f78-20031ef8e952"><td id="^F~`" class="">Reverb</td><td id="MBI&gt;" class="">Room</td><td id="Jy?b" class="">Room Reverb Simulator</td><td id="LsW_" class="">Emulates the natural reverberation of a room.</td><td id="KJlg" class="">Jazz, Acoustic</td><td id="H&lt;Di" class="">Wes Montgomery</td><td id=":y]v" class="">Acoustic Alchemy</td><td id="sFiE" class="">1. PreD: 10, Decay: 4 for a live club sound. 2. PreD: 20, Decay: 5, Mix:<br/>  60 for a warm room tone. 3. PreD: 0, Decay: 6 for a natural room ambiance on<br/>  recordings.<br/></td></tr><tr id="44c8460b-8032-403d-8873-23ee8d608cd2"><td id="^F~`" class="">Reverb</td><td id="MBI&gt;" class="">Hall</td><td id="Jy?b" class="">Hall Reverb</td><td id="LsW_" class="">Simulates the reverberation of a concert hall, perfect for orchestral<br/>  pieces.<br/></td><td id="KJlg" class="">Classical, Soundtrack</td><td id="H&lt;Di" class="">John Williams</td><td id=":y]v" class="">London Symphony Orchestra</td><td id="sFiE" class="">1. PreD: 10, Decay: 8 for a cinematic sound. 2. Decay: 10, Mix: 75 for a<br/>  grand orchestral reverb. 3. PreD: 30, Decay: 9 for a spacious solo<br/>  instrument.<br/></td></tr><tr id="a5393468-9146-4da3-a8c7-66632201daa9"><td id="^F~`" class="">Reverb</td><td id="MBI&gt;" class="">HD Hall</td><td id="Jy?b" class="">High-Definition Reverb Processor</td><td id="LsW_" class="">A high-definition hall reverb for a clearer, more modern reverb sound.</td><td id="KJlg" class="">All</td><td id="H&lt;Di" class="">Hans Zimmer</td><td id=":y]v" class="">Coldplay</td><td id="sFiE" class="">1. PreD: 20, Decay: 7 for a clean and spacious sound. 2. Decay: 8, Mix:<br/>  85 for a prominent, modern hall effect. 3. PreD: 0, Decay: 10 for an<br/>  articulate, defined reverb.<br/></td></tr></tbody></table></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
